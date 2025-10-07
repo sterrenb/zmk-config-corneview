@@ -37,7 +37,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        tri_layer {
+        tri_layer: tri_layer {
             compatible = "zmk,behavior-tri-layer";
             label = "TRI_LAYER";
             #binding-cells = <0>;
