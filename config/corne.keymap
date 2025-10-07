@@ -41,8 +41,7 @@
             compatible = "zmk,behavior-tri-layer";
             label = "TRI_LAYER";
             #binding-cells = <0>;
-            bindings = <&mo>;
-            layers = <&lower_layer &raise_layer &media_layer>;
+            layers = <1 2 3>;
         };
     };
 
