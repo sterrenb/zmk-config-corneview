@@ -13,7 +13,6 @@
         // See: https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods#custom-hold-tap-examples
         hml: hml_balanced {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML_BALANCED";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -26,7 +25,6 @@
 
         hmr: hmr_balanced {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR_BALANCED";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -39,8 +37,8 @@
 
         tri_layer: tri_layer {
             compatible = "zmk,behavior-tri-layer";
-            label = "TRI_LAYER";
             #binding-cells = <0>;
+            bindings = <&mo>;
             layers = <1 2 3>;
         };
     };
