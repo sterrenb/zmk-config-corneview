@@ -35,12 +35,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        tri_layer: tri_layer {
-            compatible = "zmk,behavior-tri-layer";
-            #binding-cells = <0>;
-            bindings = <&mo>;
-            layers = <1 2 3>;
-        };
     };
 
         keymap {
@@ -60,7 +54,7 @@
    &kp TAB   &kp B      &kp L      &kp D      &kp W      &kp Z        &kp SQT &kp F      &kp O      &kp U      &kp J    &kp BSPC
    &kp LCTRL &hml LSHFT N &hml LCTRL R &hml LALT T &hml LGUI S &kp G   &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp SQT
    &kp LSHFT &kp Q      &kp X      &kp M      &kp C      &kp V        &kp K   &kp P      &kp DOT    &kp UNDER  &kp FSLH &kp ESC
-                   &kp LGUI &tri_layer &kp SPACE  &kp RET &tri_layer &kp RALT
+                   &kp LGUI &mo lower_layer &kp SPACE  &kp RET &mo raise_layer &kp RALT
                         >;
                 };
                 lower_layer {
@@ -118,4 +112,14 @@
                 };
 
         };
+
+    // https://zmk.dev/docs/keymaps/conditional-layers
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        media_on_lower_and_raise {
+            if-layers = <&lower_layer &raise_layer>;
+            then-layer = <&media_layer>;
+        };
+    };
 };
