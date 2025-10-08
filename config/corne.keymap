@@ -66,16 +66,16 @@
             key-positions = <18 30>;
             bindings = <&kp MINUS>;
         };
-
-        volume_down {
-            timeout-ms = <100>;
-            key-positions = <10 22>;
-            bindings = <&kp C_VOL_DN>;
-        };
+        
         volume_up {
             timeout-ms = <100>;
             key-positions = <10 22>;
             bindings = <&kp C_VOL_UP>;
+        };
+        volume_down {
+            timeout-ms = <100>;
+            key-positions = <22 34>;
+            bindings = <&kp C_VOL_DN>;
         };
 
     };
