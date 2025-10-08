@@ -25,6 +25,8 @@ jobs:
           commit: ${{ github.event.workflow_run.head_sha }}
           path: build-artifacts
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          retries: 3
+          delay: 10
 
       # List contents to verify artifact
       - name: List downloaded firmware
