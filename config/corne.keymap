@@ -53,7 +53,12 @@
         del_combo {
             timeout-ms = <100>;
             key-positions = <10 11>;
-            bindings = <&kp DEL>;
+            bindings = <&kp Z>;
+        };
+        deltt_combo {
+            timeout-ms = <100>;
+            key-positions = <25 26>;
+            bindings = <&kp Y>;
         };
     };
 
