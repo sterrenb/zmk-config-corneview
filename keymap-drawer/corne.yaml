@@ -182,6 +182,6 @@ combos:
 - p: [18, 30]
   k: '-'
 - p: [10, 22]
-  k: VOL DN
-- p: [10, 22]
   k: VOL UP
+- p: [22, 34]
+  k: VOL DN
