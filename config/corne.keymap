@@ -42,7 +42,12 @@
         media_layer_combo {
             timeout-ms = <100>;
             key-positions = <0 1>;
-            bindings = <&to 3>;
+            bindings = <&kp Z>;
+        };
+        x_combo {
+            timeout-ms = <200>;
+            key-positions = <18 19>;
+            bindings = <&kp X>;
         };
     };
 
