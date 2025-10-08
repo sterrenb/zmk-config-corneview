@@ -7,11 +7,11 @@ on:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap_drawer.config.yaml"
-    branches:
-      - main
 
 jobs:
   draw:
+    # Prevent workflow loops by skipping runs triggered by the action's own commits.
+    if: github.event.head_commit.author.name != 'github-actions[bot]'
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
