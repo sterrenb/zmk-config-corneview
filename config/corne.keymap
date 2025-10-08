@@ -52,7 +52,7 @@
         };
         del_combo {
             timeout-ms = <100>;
-            key-positions = <25 26>;
+            key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
     };
