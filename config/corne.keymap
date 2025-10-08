@@ -65,7 +65,16 @@
             key-positions = <21 33>;
             bindings = <&kp C_BRIGHTNESS_INC>;
         };
-        
+        colon_combo {
+            timeout-ms = <100>;
+            key-positions = <6 18>;
+            bindings = <&kp SEMICOLON>;
+        };
+        minus_combo {
+            timeout-ms = <100>;
+            key-positions = <18 30>;
+            bindings = <&kp MINUS>;
+        };
 
     };
 
