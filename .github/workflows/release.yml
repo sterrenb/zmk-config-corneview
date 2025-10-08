@@ -20,10 +20,14 @@ jobs:
           fetch-depth: 0
 
       - name: Download firmware artifact
-        uses: actions/download-artifact@v5
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v11
         with:
-          path: firmware-artifact
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          workflow: build.yml
           run-id: ${{ github.event.workflow_run.id }}
+          path: firmware-artifact
+          name: firmware
 
       - name: List downloaded firmware
         run: ls -R firmware-artifact
