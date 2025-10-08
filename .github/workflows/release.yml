@@ -1,4 +1,4 @@
-name: Auto Version + Release
+name: Release
 
 on:
   workflow_run:
@@ -27,7 +27,7 @@ jobs:
           run_id: ${{ github.event.workflow_run.id }}
 
       - name: List downloaded firmware
-        run: ls -R build-artifact
+        run: ls -R firmware-artifact
 
       - name: Bump version and create tag
         id: tag
