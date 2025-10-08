@@ -181,3 +181,7 @@ combos:
   k: BRIGHTNESS DEC
 - p: [21, 33]
   k: BRIGHTNESS INC
+- p: [6, 18]
+  k: ;
+- p: [18, 30]
+  k: '-'
