@@ -1,0 +1,57 @@
+name: Auto Version + Release
+
+on:
+  workflow_run:
+    workflows: ["Build ZMK firmware"]
+    types:
+      - completed
+
+jobs:
+  release:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Download firmware artifact
+      - name: Download firmware artifact
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          workflow: Build ZMK firmware
+          branch: main
+          commit: ${{ github.event.workflow_run.head_sha }}
+          path: build-artifacts
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # List contents to verify artifact
+      - name: List downloaded firmware
+        run: ls -R build-artifacts
+
+      # Bump version and create semantic tag automatically
+      - name: Bump version and create tag
+        id: tag
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_prefix: "v"
+          release_branches: main
+          create_annotated_tag: true
+
+      # Stop if no new tag was created
+      - name: Stop if no new tag was created
+        if: ${{ !steps.tag.outputs.new_tag }}
+        run: echo "No new version to release." && exit 0
+
+      # Create GitHub Release and attach firmware.zip
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.new_tag }}
+          name: Release ${{ steps.tag.outputs.new_tag }}
+          files: build-artifacts/firmware.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
