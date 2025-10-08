@@ -313,24 +313,24 @@ path.combo {
 <text x="784" y="49" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="574" y="106" width="28" height="26" class="combo"/>
-<text x="588" y="119" class="combo tap">
-<tspan x="588" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="588" dy="1.2em" style="font-size: 70%">DEC</tspan>
-</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
-<text x="700" y="119" class="combo tap">
-<tspan x="700" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="700" dy="1.2em" style="font-size: 70%">INC</tspan>
-</text>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="518" y="57" width="28" height="26" class="combo"/>
 <text x="532" y="70" class="combo tap">;</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="113" width="28" height="26" class="combo"/>
 <text x="532" y="126" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">DN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">UP</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -514,24 +514,24 @@ path.combo {
 <text x="784" y="49" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="574" y="106" width="28" height="26" class="combo"/>
-<text x="588" y="119" class="combo tap">
-<tspan x="588" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="588" dy="1.2em" style="font-size: 70%">DEC</tspan>
-</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
-<text x="700" y="119" class="combo tap">
-<tspan x="700" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="700" dy="1.2em" style="font-size: 70%">INC</tspan>
-</text>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="518" y="57" width="28" height="26" class="combo"/>
 <text x="532" y="70" class="combo tap">;</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="113" width="28" height="26" class="combo"/>
 <text x="532" y="126" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">DN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">UP</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -716,24 +716,24 @@ path.combo {
 <text x="784" y="49" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="574" y="106" width="28" height="26" class="combo"/>
-<text x="588" y="119" class="combo tap">
-<tspan x="588" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="588" dy="1.2em" style="font-size: 70%">DEC</tspan>
-</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
-<text x="700" y="119" class="combo tap">
-<tspan x="700" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="700" dy="1.2em" style="font-size: 70%">INC</tspan>
-</text>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="518" y="57" width="28" height="26" class="combo"/>
 <text x="532" y="70" class="combo tap">;</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="113" width="28" height="26" class="combo"/>
 <text x="532" y="126" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">DN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">UP</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -930,24 +930,24 @@ path.combo {
 <text x="784" y="49" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="574" y="106" width="28" height="26" class="combo"/>
-<text x="588" y="119" class="combo tap">
-<tspan x="588" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="588" dy="1.2em" style="font-size: 70%">DEC</tspan>
-</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="686" y="106" width="28" height="26" class="combo"/>
-<text x="700" y="119" class="combo tap">
-<tspan x="700" dy="-0.6em" style="font-size: 70%">BRIGHTNESS</tspan><tspan x="700" dy="1.2em" style="font-size: 70%">INC</tspan>
-</text>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="518" y="57" width="28" height="26" class="combo"/>
 <text x="532" y="70" class="combo tap">;</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="113" width="28" height="26" class="combo"/>
 <text x="532" y="126" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">DN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="64" width="28" height="26" class="combo"/>
+<text x="756" y="77" class="combo tap">
+<tspan x="756" dy="-0.6em">VOL</tspan><tspan x="756" dy="1.2em">UP</tspan>
+</text>
 </g>
 </g>
 </g>

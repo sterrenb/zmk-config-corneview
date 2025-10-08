@@ -177,11 +177,11 @@ combos:
   k: ESC
 - p: [10, 11]
   k: DEL
-- p: [19, 31]
-  k: BRIGHTNESS DEC
-- p: [21, 33]
-  k: BRIGHTNESS INC
 - p: [6, 18]
   k: ;
 - p: [18, 30]
   k: '-'
+- p: [10, 22]
+  k: VOL DN
+- p: [10, 22]
+  k: VOL UP
