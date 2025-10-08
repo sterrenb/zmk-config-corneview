@@ -1,16 +1,18 @@
-# 🌽 Corne View ZMK Configuration
+# ⌨️👐⌨️  Corne View ZMK Configuration
 
-This repository contains a [ZMK](https://github.com/zmkfirmware/zmk) firmware configuration for a [Corne keyboard](https://github.com/foostan/crkbd).
+[ZMK](https://github.com/zmkfirmware/zmk) firmware configuration for a [Corne keyboard](https://github.com/foostan/crkbd).
+
+This configuration uses the [Graphite](https://github.com/rdavison/graphite-layout) layout with [home row mods](https://precondition.github.io/home-row-mods). 
 
 ## Layout
 
-This configuration uses the [Graphite](https://github.com/rdavison/graphite-layout) layout with [home row mods](https://precondition.github.io/home-row-mods). The diagram is generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
-
 ![Keymap Diagram](keymap-drawer/corne.svg)
+
+The diagram is generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
 
 ## Key Positions
 
-The key positions used in the keymap are as follows:
+Used as `key-positions` for [combos](https://zmk.dev/docs/keymaps/combos).
 
 ```
 Left half (21 keys)       Right half (21 keys)
