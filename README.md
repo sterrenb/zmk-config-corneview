@@ -1,4 +1,4 @@
-# Corne View ZMK Configuration
+# 🌽 Corne View ZMK Configuration
 
 This repository contains a [ZMK](https://github.com/zmkfirmware/zmk) firmware configuration for a [Corne keyboard](https://github.com/foostan/crkbd).
 
