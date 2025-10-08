@@ -46,9 +46,16 @@ jobs:
         if: ${{ !steps.tag.outputs.new_tag }}
         run: echo "No new version to release." && exit 0
 
+      - name: Rename firmware artifact
+        if: ${{ steps.tag.outputs.new_tag }}
+        run: |
+          mv firmware-artifact/firmware.zip firmware-artifact/firmware-${{ steps.tag.outputs.new_tag }}.zip
+          echo "Renamed artifact to firmware-${{ steps.tag.outputs.new_tag }}.zip"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.new_tag }}
           name: ${{ steps.tag.outputs.new_tag }}
-          files: firmware-artifact/*
+          files: firmware-artifact/firmware-${{ steps.tag.outputs.new_tag }}.zip
+          generate_release_notes: true
