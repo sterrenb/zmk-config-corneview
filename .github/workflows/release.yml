@@ -8,7 +8,7 @@ on:
 
 jobs:
   release:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -19,14 +19,12 @@ jobs:
 
       # Download firmware artifact
       - name: Download firmware artifact
-        uses: dawidd6/action-download-artifact@v3
+        uses: dawidd6/action-download-artifact@v11
         with:
-          workflow: Build ZMK firmware
-          commit: ${{ github.event.workflow_run.head_sha }}
+          workflow: build.yml
+          workflow_conclusion: success
           path: build-artifacts
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          retries: 3
-          delay: 10
 
       # List contents to verify artifact
       - name: List downloaded firmware
