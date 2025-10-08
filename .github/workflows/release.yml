@@ -22,7 +22,6 @@ jobs:
         uses: dawidd6/action-download-artifact@v3
         with:
           workflow: Build ZMK firmware
-          branch: main
           commit: ${{ github.event.workflow_run.head_sha }}
           path: build-artifacts
           github_token: ${{ secrets.GITHUB_TOKEN }}
