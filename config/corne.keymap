@@ -50,6 +50,11 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+        del_combo {
+            timeout-ms = <100>;
+            key-positions = <25 26>;
+            bindings = <&kp DEL>;
+        };
     };
 
         keymap {
