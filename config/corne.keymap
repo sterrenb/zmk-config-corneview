@@ -53,13 +53,20 @@
         del_combo {
             timeout-ms = <100>;
             key-positions = <10 11>;
-            bindings = <&kp Z>;
+            bindings = <&kp DEL>;
         };
-        deltt_combo {
+        brightness_dec_combo {
             timeout-ms = <100>;
-            key-positions = <25 26>;
-            bindings = <&kp Y>;
+            key-positions = <19 31>;
+            bindings = <&kp BRIGHTNESS_DEC>;
         };
+        brightness_inc_combo {
+            timeout-ms = <100>;
+            key-positions = <21 33>;
+            bindings = <&kp BRIGHTNESS_INC>;
+        };
+        
+
     };
 
         keymap {
