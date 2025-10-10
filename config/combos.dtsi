@@ -80,8 +80,8 @@
         COMBO_BASE(volume_down, &kp C_VOL_DN, 23 35)
         COMBO_BASE(volume_mute, &kp C_MUTE, 34 35)
 
-        COMBO_RAISE(media_pause, &kp C_PREV, 11 23)
-        COMBO_RAISE(media_pause, &kp C_NEXT, 23 35)
-        COMBO_RAISE(play_pause, &kp C_PLAY_PAUSE, 34 35)
+        COMBO_RAISE(media_prev, &kp C_PREV, 11 23)
+        COMBO_RAISE(media_next, &kp C_NEXT, 23 35)
+        COMBO_RAISE(media_play_pause, &kp C_PLAY_PAUSE, 34 35)
     };
 };
