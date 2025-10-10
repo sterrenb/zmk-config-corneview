@@ -1,31 +1,31 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - B
   - L
   - D
   - W
   - Z
-  - ''''
+  - {t: '''', s: '"'}
   - F
   - O
   - U
   - J
-  - BSPC
-  - LCTRL
-  - {t: N, h: LSHFT}
-  - {t: R, h: LCTRL}
-  - {t: T, h: LALT}
-  - {t: S, h: LGUI}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - Y
-  - {t: H, h: RGUI}
-  - {t: A, h: RALT}
-  - {t: E, h: RCTRL}
-  - {t: I, h: RSHFT}
-  - ''''
-  - LSHFT
+  - {t: H, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
   - Q
   - X
   - M
@@ -33,44 +33,42 @@ layers:
   - V
   - K
   - P
-  - .
+  - {t: ., s: '>'}
   - _
-  - /
-  - ESC
-  - LGUI
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-command$$
   - '&lmtd'
-  - SPACE
+  - $$mdi:keyboard-space$$
   - RET
   - Raise
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   Lower:
-  - TAB
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BSPC
-  - LCTRL
+  - $$mdi:keyboard-tab$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,14 +78,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
   - {t: ▽, type: trans}
-  - SPACE
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - $$mdi:keyboard-space$$
   - RET
   - {t: ▽, type: trans}
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   Raise:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - '!'
   - '@'
   - '#'
@@ -98,20 +98,20 @@ layers:
   - KP MULTIPLY
   - (
   - )
-  - BSPC
-  - LCTRL
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - LSHFT
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - '}'
   - '|'
   - '~'
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - {t: ▽, type: trans}
-  - SPACE
+  - $$mdi:keyboard-space$$
   - RET
   - {type: held}
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -137,21 +137,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   - {t: ▽, type: trans}
-  - VOL DN
-  - MUTE
-  - VOL UP
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -174,14 +174,14 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
-  k: ESC
+  k: $$mdi:keyboard-esc$$
 - p: [10, 11]
-  k: DEL
+  k: $$mdi:backspace-reverse-outline$$
 - p: [6, 18]
-  k: ;
+  k: {t: ;, s: ':'}
 - p: [18, 30]
-  k: '-'
+  k: {t: '-', s: _}
 - p: [10, 22]
-  k: VOL UP
+  k: $$mdi:volume-high$$
 - p: [22, 34]
-  k: VOL DN
+  k: $$mdi:volume-low$$
