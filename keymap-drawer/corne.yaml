@@ -13,7 +13,7 @@ layers:
   - U
   - J
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-option$$'}
@@ -35,16 +35,16 @@ layers:
   - P
   - {t: ., s: '>'}
   - _
-  - {t: /, s: '?'}
+  - {t: ;, s: ':'}
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-command$$
-  - '&lmtd'
+  - Lower
   - $$mdi:keyboard-space$$
-  - RET
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Raise
   - $$mdi:apple-keyboard-option$$
   Lower:
-  - $$mdi:keyboard-tab$$
+  - {t: ▽, type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -56,19 +56,19 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '6', h: '$$mdi:apple-keyboard-shift$$', s: ^}
+  - {t: '7', h: '$$mdi:apple-keyboard-control$$', s: '&'}
+  - {t: '8', h: '$$mdi:apple-keyboard-option$$', s: '*'}
+  - {t: '9', h: '$$mdi:apple-keyboard-command$$', s: (}
+  - {t: '0', s: )}
   - {t: ▽, type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,43 +81,43 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
+  - {type: held}
   - $$mdi:keyboard-space$$
-  - RET
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   Raise:
-  - $$mdi:keyboard-tab$$
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - ^
   - '&'
   - KP MULTIPLY
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F8, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F9, h: '$$mdi:apple-keyboard-command$$'}
+  - F10
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - F15
   - +
   - '{'
   - '}'
@@ -126,68 +126,103 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ▽, type: trans}
   - $$mdi:keyboard-space$$
-  - RET
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - $$mdi:apple-keyboard-option$$
-  Media:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: ▽, type: trans}
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
-- p: [10, 11]
-  k: $$mdi:backspace-reverse-outline$$
-- p: [6, 18]
-  k: {t: ;, s: ':'}
-- p: [18, 30]
-  k: {t: '-', s: _}
-- p: [10, 22]
-  k: $$mdi:volume-high$$
-- p: [22, 34]
-  k: $$mdi:volume-low$$
+  l: [Base]
 - p: [1, 13]
   k: '!'
   l: [Base]
 - p: [2, 14]
   k: '@'
   l: [Base]
+- p: [3, 15]
+  k: '#'
+  l: [Base]
+- p: [4, 16]
+  k: $
+  l: [Base]
+- p: [5, 17]
+  k: '%'
+  l: [Base]
+- p: [13, 25]
+  k: ^
+  l: [Base]
+- p: [14, 26]
+  k: '&'
+  l: [Base]
+- p: [15, 27]
+  k: '*'
+  l: [Base]
+- p: [16, 28]
+  k: (
+  l: [Base]
+- p: [17, 29]
+  k: )
+  l: [Base]
+- p: [0, 12]
+  k: $$mdi:bluetooth-off$$
+  l: [Raise]
+- p: [1, 13]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  l: [Raise]
+- p: [2, 14]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  l: [Raise]
+- p: [3, 15]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  l: [Raise]
+- p: [4, 16]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  l: [Raise]
+- p: [5, 17]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  l: [Raise]
+- p: [10, 11]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [Base]
+- p: [7, 19]
+  k: {t: '-', s: _}
+  l: [Base]
+- p: [8, 20]
+  k: {t: '=', s: +}
+  l: [Base]
+- p: [9, 21]
+  k: {t: /, s: '?'}
+  l: [Base]
+- p: [6, 18]
+  k: $$mdi:transfer-up$$
+  l: [Base]
+- p: [18, 30]
+  k: $$mdi:transfer-down$$
+  l: [Base]
+- p: [19, 31]
+  k: {t: '[', s: '{'}
+  l: [Base]
+- p: [20, 32]
+  k: {t: ']', s: '}'}
+  l: [Base]
+- p: [21, 33]
+  k: {t: \, s: '|'}
+  l: [Base]
+- p: [11, 23]
+  k: $$mdi:volume-high$$
+  l: [Base]
+- p: [23, 35]
+  k: $$mdi:volume-low$$
+  l: [Base]
+- p: [34, 35]
+  k: $$mdi:volume-off$$
+  l: [Base]
+- p: [11, 23]
+  k: $$mdi:skip-previous$$
+  l: [Raise]
+- p: [23, 35]
+  k: $$mdi:skip-next$$
+  l: [Raise]
+- p: [34, 35]
+  k: $$mdi:play-pause$$
+  l: [Raise]
