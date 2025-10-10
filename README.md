@@ -8,7 +8,7 @@ This configuration uses the [Graphite](https://github.com/rdavison/graphite-layo
 
 ![Keymap Diagram](keymap-drawer/corne.svg)
 
-The diagram is generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
+> Generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
 
 ## Key Positions
 
@@ -25,4 +25,12 @@ Left half (21 keys)       Right half (21 keys)
 
 ## Building
 
-This configuration is built using the standard ZMK GitHub Actions workflow.
+The firmware and diagrams are built via GitHub Actions workflow.
+
+To use Keymap Drawer locally, use [draw.zsh](./scripts/draw.zsh).
+
+## Useful links
+
+- [Build guide - typeractive.xyz](https://docs.typeractive.xyz/build-guides/corne-wireless) 
+- [Typing lessons - keybr.com](https://www.keybr.com/)
+- [Keyboard layouts doc (3rd edition)](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?usp=sharing)
