@@ -6,18 +6,19 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
-      - "keymap_drawer.config.yaml"
-    branches:
-      - main
+      - "config/keymap_drawer.config.yml"
 
 jobs:
   draw:
+    # Prevent workflow loops by skipping runs triggered by the action's own commits.
+    if: github.event.head_commit.author.name != 'github-actions[bot]'
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
     with:
       keymap_patterns: "config/*.keymap"
-      config_path: "keymap_drawer.config.yaml"
+      config_path: "config/keymap-drawer.config.yml"
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: ""
+      commit_message: "chore: draw keymaps"
