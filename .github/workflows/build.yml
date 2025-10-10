@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "config/**"
+    paths-ignore:
+      - "config/keymap-drawer.config.yml"
 
 jobs:
   build:
