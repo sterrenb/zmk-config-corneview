@@ -27,7 +27,7 @@ Left half (21 keys)       Right half (21 keys)
 
 The firmware and diagrams are built via GitHub Actions workflow.
 
-To use Keymap Drawer locally, use [draw.zsh](./scripts/draw.zsh).
+To use Keymap Drawer locally, see the [scripts](./scripts).
 
 ## Useful links
 
