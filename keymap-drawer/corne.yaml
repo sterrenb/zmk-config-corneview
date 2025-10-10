@@ -185,3 +185,9 @@ combos:
   k: $$mdi:volume-high$$
 - p: [22, 34]
   k: $$mdi:volume-low$$
+- p: [1, 13]
+  k: '!'
+  l: [Base]
+- p: [2, 14]
+  k: '@'
+  l: [Base]
