@@ -208,21 +208,18 @@ combos:
 - p: [21, 33]
   k: {t: \, s: '|'}
   l: [Base]
-- p: [11, 23]
-  k: $$mdi:volume-high$$
-  l: [Base]
-- p: [23, 35]
-  k: $$mdi:volume-low$$
-  l: [Base]
-- p: [34, 35]
-  k: $$mdi:volume-off$$
-  l: [Base]
-- p: [11, 23]
+- p: [19, 31]
   k: $$mdi:skip-previous$$
   l: [Raise]
-- p: [23, 35]
+- p: [20, 32]
+  k: $$mdi:play-pause$$
+  l: [Raise]
+- p: [21, 33]
   k: $$mdi:skip-next$$
   l: [Raise]
-- p: [34, 35]
-  k: $$mdi:play-pause$$
+- p: [22, 34]
+  k: $$mdi:volume-low$$
+  l: [Raise]
+- p: [23, 35]
+  k: $$mdi:volume-high$$
   l: [Raise]
