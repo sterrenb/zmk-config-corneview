@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "config/**"
-    paths-ignore:
-      - "config/keymap-drawer.config.yml"
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/west.yml"
 
 jobs:
   build:
