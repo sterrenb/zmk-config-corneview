@@ -1,13 +1,25 @@
 draw_config:
+  outer_pad_w: 0
+  outer_pad_h: 10
+
+  append_colon_to_layer_header: false
+
+  combo_w: 20
+  combo_h: 20
+
+  inner_pad_w: 1.5
+  inner_pad_h: 1.5
+
+  split_gap: 100
+
   svg_extra_style: |
     svg.keymap {
-      --color--red: rgb(255, 100, 100);
+      --color--red: rgb(255, 100, 80);
+      --color--red-mild: rgb(200, 100, 100);
     }
 
-    text {
-        text-anchor: middle;
-        dominant-baseline: middle;
-        line-height: 1;
+    .combo.shifted {
+      translate: -6px 1px;
     }
 
     .trans {
@@ -15,11 +27,24 @@ draw_config:
     }
 
     .keypos-0 rect.key,
-    .keypos-11 rect.key{
+    .keypos-11 rect.key {
       fill: var(--color--red);
+      stroke: var(--color--red-mild);
     }
 
-    text.label { }
+    text.label { 
+      translate: 405px 100px;
+    }
+
+    .hold {
+        translate: -16px 0px;
+        opacity: 0.65;
+    }
+
+    use[href="#mdi:bluetooth-connect"] + text {
+      # display: none;
+      translate: 5px 0px;
+    }
 parse_config:
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
@@ -189,7 +214,7 @@ parse_config:
     PG_DN: $$mdi:transfer-down$$
 
     # Whitespace
-    ENTER:
+    RET:
       type: enter
       tap: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
@@ -222,6 +247,27 @@ parse_config:
     # Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
+
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "11"
+      hold: 122
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 3
+    "&bt BT_SEL 3":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 4
+    "&bt BT_SEL 4":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 5
 
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$

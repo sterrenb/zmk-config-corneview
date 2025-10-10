@@ -5,8 +5,8 @@
 // Layers
 // TODO use these in keymap
 #define BASE 0
-#define RAISE 1
-#define LOWER 2
+#define LOWER 1
+#define RAISE 2
 
 // Behaviors Constants
 #define TAPPING_TERM_MS 200
