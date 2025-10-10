@@ -65,5 +65,8 @@
             key-positions = <22 34>;
             bindings = <&kp C_VOL_DN>;
         };
+
+        COMBO_DEFAULT(excl, &kp EXCL, 1 13, BASE)
+        COMBO_DEFAULT(at, &kp AT, 2 14, BASE)
     };
 };
