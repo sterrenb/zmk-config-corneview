@@ -80,7 +80,7 @@
         COMBO_BASE(backslash, &kp BACKSLASH, 21 33)
 
         // Both
-        COMBO_BASE(capslock, &kp CAPS_LOCK, 5 6)
+        COMBO_BASE(capslock, &kp CAPSLOCK, 5 6)
         COMBO_BASE(capsword, &caps_word, 29 30)
 
         // Media

@@ -237,7 +237,7 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # Locks
-    CAPS_LOCK: $$mdi:apple-keyboard-caps$$
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
 
     # Sound
