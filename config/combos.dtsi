@@ -57,6 +57,9 @@
         COMBO_BASE(left_paren, &kp LPAR, 16 28)
         COMBO_BASE(right_paren, &kp RPAR, 17 29)
 
+        COMBO_BASE(pgup, &kp PG_UP, 12 13)
+        COMBO_BASE(pgdn, &kp PG_DN, 24 25)
+
         COMBO_RAISE(bt_clear, &bt BT_CLR, 0 12)
         COMBO_RAISE(bt_sel_0, &bt BT_SEL 0, 1 13)
         COMBO_RAISE(bt_sel_1, &bt BT_SEL 1, 2 14)
@@ -70,17 +73,20 @@
         COMBO_BASE(minus, &kp MINUS, 7 19)
         COMBO_BASE(equal, &kp EQUAL, 8 20)
         COMBO_BASE(slash, &kp SLASH, 9 21)
-        COMBO_BASE(pgup, &kp PG_UP, 6 18)
-        COMBO_BASE(pgdn, &kp PG_DN, 18 30)
+        COMBO_BASE(home, &kp HOME, 6 18)
+        COMBO_BASE(end, &kp END, 18 30)
         COMBO_BASE(lbkt, &kp LBKT, 19 31)
         COMBO_BASE(rbkt, &kp RBKT, 20 32)
         COMBO_BASE(backslash, &kp BACKSLASH, 21 33)
 
-        // Media and Volume on Raise layer
-        COMBO_RAISE(media_prev, &kp C_PREV, 19 31)
-        COMBO_RAISE(media_play_pause, &kp C_PLAY_PAUSE, 20 32)
-        COMBO_RAISE(media_next, &kp C_NEXT, 21 33)
-        COMBO_RAISE(volume_down, &kp C_VOL_DN, 22 34)
-        COMBO_RAISE(volume_up, &kp C_VOL_UP, 23 35)
+        // Both
+        COMBO_BASE(capslock, &kp CAPSLOCK, 5 6)
+        COMBO_BASE(capsword, &caps_word, 29 30)
+
+        // Media
+        COMBO_BASE(media_play_pause, &kp C_PLAY_PAUSE, 22 23)
+        COMBO_BASE(media_next, &kp C_NEXT, 34 35)
+        COMBO_BASE(volume_up, &kp C_VOL_UP, 11 23)
+        COMBO_BASE(volume_dn, &kp C_VOL_DN, 23 35)
     };
 };

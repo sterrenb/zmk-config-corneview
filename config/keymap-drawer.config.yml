@@ -54,7 +54,9 @@ parse_config:
   trans_legend:
     tap: $$mdi:transfer$$
     type: trans
-  raw_binding_map: {}
+  raw_binding_map:
+    "&caps_word": $$mdi:format-letter-case-upper$$
+
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
