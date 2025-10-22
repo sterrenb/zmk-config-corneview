@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - B
   - L
   - D
@@ -13,7 +13,7 @@ layers:
   - U
   - J
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-option$$'}
@@ -25,7 +25,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '`', s: '~'}
   - Q
   - X
   - M
@@ -42,7 +42,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Raise
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-tab$$
   Lower:
   - {t: ▽, type: trans}
   - {t: '1', s: '!'}
@@ -84,8 +84,8 @@ layers:
   - {type: held}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - Raise
+  - $$mdi:keyboard-tab$$
   Raise:
   - {t: ▽, type: trans}
   - F1
@@ -124,11 +124,11 @@ layers:
   - '|'
   - '~'
   - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
+  - Lower
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-tab$$
 combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
@@ -163,6 +163,12 @@ combos:
 - p: [17, 29]
   k: )
   l: [Base]
+- p: [12, 13]
+  k: $$mdi:transfer-up$$
+  l: [Base]
+- p: [24, 25]
+  k: $$mdi:transfer-down$$
+  l: [Base]
 - p: [0, 12]
   k: $$mdi:bluetooth-off$$
   l: [Raise]
@@ -194,10 +200,10 @@ combos:
   k: {t: /, s: '?'}
   l: [Base]
 - p: [6, 18]
-  k: $$mdi:transfer-up$$
+  k: HOME
   l: [Base]
 - p: [18, 30]
-  k: $$mdi:transfer-down$$
+  k: END
   l: [Base]
 - p: [19, 31]
   k: {t: '[', s: '{'}
@@ -208,18 +214,21 @@ combos:
 - p: [21, 33]
   k: {t: \, s: '|'}
   l: [Base]
-- p: [19, 31]
-  k: $$mdi:skip-previous$$
-  l: [Raise]
-- p: [20, 32]
+- p: [5, 6]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [Base]
+- p: [29, 30]
+  k: $$mdi:format-letter-case-upper$$
+  l: [Base]
+- p: [22, 23]
   k: $$mdi:play-pause$$
-  l: [Raise]
-- p: [21, 33]
+  l: [Base]
+- p: [34, 35]
   k: $$mdi:skip-next$$
-  l: [Raise]
-- p: [22, 34]
-  k: $$mdi:volume-low$$
-  l: [Raise]
-- p: [23, 35]
+  l: [Base]
+- p: [11, 23]
   k: $$mdi:volume-high$$
-  l: [Raise]
+  l: [Base]
+- p: [23, 35]
+  k: $$mdi:volume-low$$
+  l: [Base]
