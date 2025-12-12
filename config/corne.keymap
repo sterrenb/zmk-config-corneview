@@ -34,7 +34,7 @@
                         display-name = "Raise";
                         bindings = <
    &trans    &kp F1     &kp F2       &kp F3     &kp F4     &kp F5      &kp CARET &kp AMPS      &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
-   &trans  &hml LSHFT F6 &hml LCTRL F7 &hml LALT F8  &hml LGUI F9       &kp F10         &kp MINUS &kp EQUAL     &kp LBKT        &kp RBKT     &kp BSLH     &kp GRAVE
+   &trans  &hml LSHFT F6 &hml LCTRL F7 &hml LALT F8  &hml LGUI F9       &kp F10         &kp MINUS &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &kp GRAVE
    &trans  &kp F11       &kp F12       &kp F13       &kp F14       &kp F15         &kp F15 &kp PLUS      &kp LBRC        &kp RBRC     &kp PIPE     &kp TILDE
                                         &kp LGUI     &mo 1       &kp SPACE      &kp RET   &trans       &kp TAB
                         >;
