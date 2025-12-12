@@ -106,10 +106,10 @@ layers:
   - {t: F9, h: '$$mdi:apple-keyboard-command$$'}
   - F10
   - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '`', s: '~'}
   - {t: ▽, type: trans}
   - F11
