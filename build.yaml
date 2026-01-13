@@ -24,5 +24,3 @@ include:
     snippet: studio-rpc-usb-uart
   - board: nice_nano
     shield: corne_right nice_view_adapter nice_view
-  - board: nice_nano
-    shield: settings_reset
