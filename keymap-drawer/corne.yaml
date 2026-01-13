@@ -34,7 +34,7 @@ layers:
   - K
   - P
   - {t: ., s: '>'}
-  - _
+  - {t: ',', s: <}
   - {t: ;, s: ':'}
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-command$$
