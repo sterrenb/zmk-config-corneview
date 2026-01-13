@@ -16,7 +16,7 @@
                         bindings = <
    &kp BSPC   &kp B        &kp L        &kp D        &kp W        &kp Z          &kp SQT  &kp F        &kp O        &kp U        &kp J        &kp BSPC
    &kp DEL &hml LSHFT N &hml LCTRL R &hml LALT T  &hml LGUI S  &kp G          &kp Y    &hmr RGUI H  &hmr RALT A  &hmr RCTRL E &hmr RSHFT I &kp SQT
-   &kp GRAVE &kp Q        &kp X        &kp M        &kp C        &kp V          &kp K    &kp P        &kp DOT      &kp UNDER    &kp SEMICOLON     &kp ESC
+   &kp GRAVE &kp Q        &kp X        &kp M        &kp C        &kp V          &kp K    &kp P        &kp DOT      &kp COMMA    &kp SEMICOLON     &kp ESC
                                        &kp LGUI     &mo 1        &kp SPACE      &kp RET  &mo 2        &kp TAB
                         >;
                 };
