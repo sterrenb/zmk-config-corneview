@@ -2,11 +2,20 @@ name: Build ZMK firmware
 on:
   workflow_dispatch:
   push:
+    branches-ignore:
+      - main
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "config/west.yml"
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && (startsWith(github.ref, 'refs/heads/release/') || github.ref != 'refs/heads/main'))
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2

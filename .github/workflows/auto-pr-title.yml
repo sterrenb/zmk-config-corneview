@@ -1,0 +1,37 @@
+name: Auto PR Title
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  update-title:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Format PR Title
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BRANCH_NAME: ${{ github.head_ref }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          # Standardize prefixes
+          TRANSFORMED=$(echo "$BRANCH_NAME" | sed -E 's|^feature/|feat/|; s|^bugfix/|fix/|; s|^hotfix/|fix/|')
+
+          # Convert "type/desc" to "type: desc"
+          if [[ "$TRANSFORMED" == *"/"* ]]; then
+            CANDIDATE=$(echo "$TRANSFORMED" | sed 's|/|: |')
+          else
+            CANDIDATE="$TRANSFORMED"
+          fi
+
+          # Check if valid Conventional Commit type, else default to chore
+          if [[ "$CANDIDATE" =~ ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert)(\(.*\))?!?: ]]; then
+            NEW_TITLE="$CANDIDATE"
+          else
+            NEW_TITLE="chore: $(echo "$BRANCH_NAME" | sed 's|/| |g')"
+          fi
+
+          gh pr edit "$PR_NUMBER" --title "$NEW_TITLE"

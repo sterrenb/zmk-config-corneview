@@ -1,61 +1,69 @@
-name: Release
+name: Finalize Release
 
 on:
   workflow_run:
     workflows: ["Build ZMK firmware"]
     types:
       - completed
+    branches:
+      - "release/*"
 
 jobs:
   release:
-    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    name: Create GitHub Release and PR
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      startsWith(github.event.workflow_run.head_branch, 'release/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: read
+      pull-requests: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Extract version from branch name
+        id: extract_version
+        run: |
+          BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
+          VERSION=${BRANCH_NAME#release/}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Download firmware artifact
         id: download-artifact
         uses: dawidd6/action-download-artifact@v11
         with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: build.yml
           run_id: ${{ github.event.workflow_run.id }}
           path: firmware-artifact
           name: firmware
           skip_unpack: true
 
-      - name: List downloaded firmware
-        run: ls -R firmware-artifact
-
-      - name: Bump version and create tag
-        id: tag
-        uses: mathieudutour/github-tag-action@v6.2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: "v"
-          release_branches: main
-          create_annotated_tag: true
-
-      - name: Stop if no new tag was created
-        if: ${{ !steps.tag.outputs.new_tag }}
-        run: echo "No new version to release." && exit 0
-
       - name: Rename firmware artifact
-        if: ${{ steps.tag.outputs.new_tag }}
         run: |
-          mv firmware-artifact/firmware.zip firmware-artifact/firmware-${{ steps.tag.outputs.new_tag }}.zip
-          echo "Renamed artifact to firmware-${{ steps.tag.outputs.new_tag }}.zip"
+          mv firmware-artifact/firmware.zip firmware-artifact/firmware-${{ steps.extract_version.outputs.version }}.zip
+          echo "Renamed artifact to firmware-${{ steps.extract_version.outputs.version }}.zip"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.tag.outputs.new_tag }}
-          name: ${{ steps.tag.outputs.new_tag }}
-          files: firmware-artifact/firmware-${{ steps.tag.outputs.new_tag }}.zip
+          tag_name: ${{ steps.extract_version.outputs.version }}
+          target_commitish: ${{ github.event.workflow_run.head_branch }}
+          name: ${{ steps.extract_version.outputs.version }}
+          files: firmware-artifact/firmware-${{ steps.extract_version.outputs.version }}.zip
           generate_release_notes: true
+
+      - name: Merge release branch to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git merge --no-ff origin/${{ github.event.workflow_run.head_branch }} -m "chore(release): merge ${{ steps.extract_version.outputs.version }}"
+          git push origin main
+          git push origin --delete ${{ github.event.workflow_run.head_branch }} || true

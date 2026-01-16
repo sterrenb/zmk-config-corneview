@@ -1,16 +1,15 @@
-# ⌨️👐⌨️  Corne View ZMK Configuration
+# ⌨⌨ Corne View ZMK Configuration
 
 [ZMK](https://github.com/zmkfirmware/zmk) firmware configuration for a [Corne keyboard](https://github.com/foostan/crkbd).
 
-This configuration uses the [Graphite](https://github.com/rdavison/graphite-layout) layout with [home row mods](https://precondition.github.io/home-row-mods). 
+This configuration uses the [Graphite](https://github.com/rdavison/graphite-layout) layout with [home row mods](https://precondition.github.io/home-row-mods).
 
-## Layout
-
+## ⊞ Layout
 ![Keymap Diagram](keymap-drawer/corne.svg)
 
 > Generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer).
 
-## Key Positions
+## ⚲ Key Positions
 
 Used as `key-positions` for [combos](https://zmk.dev/docs/keymaps/combos).
 
@@ -23,14 +22,14 @@ Left half (21 keys)       Right half (21 keys)
               36  37  38    39  40  41
 ```
 
-## Building
+## 🛠 Building firmware
 
 The firmware and diagrams are built via GitHub Actions workflow.
 
 To use Keymap Drawer locally, see the [scripts](./scripts).
 
-## Useful links
+## 🖇 Useful links
 
-- [Build guide - typeractive.xyz](https://docs.typeractive.xyz/build-guides/corne-wireless) 
+- [ZMK docs](https://zmk.dev/docs)
 - [Typing lessons - keybr.com](https://www.keybr.com/)
 - [Keyboard layouts doc (3rd edition)](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?usp=sharing)
