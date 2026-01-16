@@ -588,18 +588,24 @@ use[href="#material:arrow_circle_up"] {
 <use href="#mdi:format-letter-case-upper" xlink:href="#mdi:format-letter-case-upper" x="413" y="147" height="14" width="14.0" class="combo tap glyph mdi:format-letter-case-upper"/>
 </g>
 <g class="combo combopos-24">
+<path d="M554,165 l185,-54" class="combo"/>
+<path d="M554,165 l-185,54" class="combo"/>
+<rect rx="6" ry="6" x="544" y="155" width="20" height="20" class="combo"/>
+<text x="554" y="165" class="combo tap"><tspan style="font-size: 64%">&amp;capitaliz…</tspan></text>
+</g>
+<g class="combo combopos-25">
 <rect rx="6" ry="6" x="802" y="67" width="20" height="20" class="combo"/>
 <use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="805" y="70" height="14" width="14.0" class="combo tap glyph mdi:volume-high"/>
 </g>
-<g class="combo combopos-25">
+<g class="combo combopos-26">
 <rect rx="6" ry="6" x="802" y="123" width="20" height="20" class="combo"/>
 <use href="#mdi:volume-low" xlink:href="#mdi:volume-low" x="805" y="126" height="14" width="14.0" class="combo tap glyph mdi:volume-low"/>
 </g>
-<g class="combo combopos-26">
+<g class="combo combopos-27">
 <rect rx="6" ry="6" x="18" y="67" width="20" height="20" class="combo"/>
 <use href="#mdi:rewind" xlink:href="#mdi:rewind" x="21" y="70" height="14" width="14.0" class="combo tap glyph mdi:rewind"/>
 </g>
-<g class="combo combopos-27">
+<g class="combo combopos-28">
 <rect rx="6" ry="6" x="18" y="123" width="20" height="20" class="combo"/>
 <use href="#mdi:fast-forward" xlink:href="#mdi:fast-forward" x="21" y="126" height="14" width="14.0" class="combo tap glyph mdi:fast-forward"/>
 </g>

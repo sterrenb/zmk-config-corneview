@@ -220,6 +220,9 @@ combos:
 - p: [29, 30]
   k: $$mdi:format-letter-case-upper$$
   l: [v0.4.0]
+- p: [22, 38]
+  k: '&capitalize_i'
+  l: [v0.4.0]
 - p: [11, 23]
   k: $$mdi:volume-high$$
   l: [v0.4.0]
