@@ -1,4 +1,14 @@
 / {
+    macros {
+        capitalize_i: capitalize_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(I) &kp SPACE>
+                ;
+        };
+    };
+
     behaviors {
         // Home Row Mods
         // See: https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods#custom-hold-tap-examples
