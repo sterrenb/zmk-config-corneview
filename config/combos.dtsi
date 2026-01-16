@@ -45,13 +45,7 @@
         // Split over both halves
         COMBO_BASE(capslock, &kp CAPSLOCK, 5 6)
         COMBO_BASE(capsword, &caps_word, 29 30)
-        combo_capitalize_i {
-            timeout-ms = <50>;
-            bindings = <&capitalize_i>;
-            key-positions = <22 38>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
+        COMBO(capitalize_i, &capitalize_i, 22 38, 0, 100, 100)
 
         // Left
         COMBO_BASE(backspace, &kp BSPC, 0 1)
