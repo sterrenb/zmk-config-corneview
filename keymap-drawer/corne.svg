@@ -247,6 +247,11 @@ svg.keymap {
   font-family: system-ui, sans-serif;
 }
 
+/* Hide capitalize_i combo (index 2) to prevent drawing line across split */
+.combopos-2 {
+    display: none;
+}
+
 g[class^="layer-"]:first-of-type .label {
     display: none;
 }
@@ -497,7 +502,9 @@ use[href="#material:arrow_circle_up"] {
 <path d="M554,165 l185,-54" class="combo"/>
 <path d="M554,165 l-185,54" class="combo"/>
 <rect rx="6" ry="6" x="544" y="155" width="20" height="20" class="combo"/>
-<text x="554" y="165" class="combo tap"><tspan style="font-size: 64%">&amp;capitaliz…</tspan></text>
+<text x="554" y="165" class="combo tap">
+<tspan x="554" dy="-0.6em">Cap</tspan><tspan x="554" dy="1.2em">I</tspan>
+</text>
 </g>
 <g class="combo backspace combopos-3">
 <rect rx="6" ry="6" x="46" y="39" width="20" height="20" class="combo backspace"/>
