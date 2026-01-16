@@ -3,6 +3,8 @@
         capitalize_i: capitalize_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_tap &kp LS(I) &kp SPACE>
                 ;
