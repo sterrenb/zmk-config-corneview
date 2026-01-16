@@ -20,6 +20,11 @@ draw_config:
       font-family: system-ui, sans-serif;
     }
 
+    /* Hide capitalize_i combo (index 2) to prevent drawing line across split */
+    .combopos-2 {
+        display: none;
+    }
+
     g[class^="layer-"]:first-of-type .label {
         display: none;
     }
@@ -76,6 +81,7 @@ parse_config:
     type: trans
   raw_binding_map:
     "&caps_word": $$mdi:format-letter-case-upper$$
+    "&capitalize_i": "Cap I"
     "&mo 1": $$material:arrow_circle_down$$
     "&mo 2": $$material:arrow_circle_up$$
     "&mo LOWER": $$material:arrow_circle_down$$
