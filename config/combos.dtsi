@@ -1,13 +1,13 @@
 #define COMBO_TERM_DEFAULT 30
-#define COMBO_QUICK_TAP_MS 100
+#define COMBO_PRIOR_IDLE_MS 100
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, PRIOR_IDLE) \
   combo_##NAME { \
     timeout-ms = <TERM>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    require-prior-idle-ms = <QUICKTAP>; \
+    require-prior-idle-ms = <PRIOR_IDLE>; \
   };
 
 #define COMBO_BASE(NAME, BINDINGS, KEYPOS) \
@@ -16,7 +16,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <BASE>; \
-    require-prior-idle-ms = <COMBO_QUICK_TAP_MS>; \
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE_MS>; \
   };
 
 #define COMBO_RAISE(NAME, BINDINGS, KEYPOS) \
@@ -25,7 +25,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <RAISE>; \
-    require-prior-idle-ms = <COMBO_QUICK_TAP_MS>; \
+    require-prior-idle-ms = <COMBO_PRIOR_IDLE_MS>; \
   };
 
 / {
