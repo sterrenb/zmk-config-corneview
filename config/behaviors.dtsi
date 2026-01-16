@@ -5,9 +5,7 @@
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings
-                = <&macro_tap &kp LS(I) &kp SPACE>
-                ;
+            bindings = <&macro_tap &kp LS(I) &kp SPACE>;
         };
     };
 
@@ -36,13 +34,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
-        };
-        
-        lmtd: lower_media_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM_MS>;
-            bindings = <&mo 1>, <&tog 3>;
         };
     };
 };

@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Layers
-// TODO use these in keymap
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
