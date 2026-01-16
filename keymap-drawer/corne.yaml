@@ -172,27 +172,6 @@ combos:
 - p: [17, 29]
   k: )
   l: [v0.4.0]
-- p: [11, 23]
-  k: $$mdi:bluetooth-off$$
-  l: [Raise]
-- p: [6, 18]
-  k: {t: '1', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
-  l: [Raise]
-- p: [7, 19]
-  k: {t: '2', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
-  l: [Raise]
-- p: [8, 20]
-  k: {t: '3', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
-  l: [Raise]
-- p: [9, 21]
-  k: {t: '4', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
-  l: [Raise]
-- p: [10, 22]
-  k: {t: '5', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
-  l: [Raise]
-- p: [10, 11]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [v0.4.0]
 - p: [7, 19]
   k: {t: '-', s: _}
   l: [v0.4.0]
@@ -201,6 +180,9 @@ combos:
   l: [v0.4.0]
 - p: [9, 21]
   k: {t: /, s: '?'}
+  l: [v0.4.0]
+- p: [10, 11]
+  k: $$mdi:backspace-reverse-outline$$
   l: [v0.4.0]
 - p: [6, 18]
   k: $$mdi:arrow-collapse-left$$
@@ -223,6 +205,24 @@ combos:
 - p: [22, 34]
   k: '?'
   l: [v0.4.0]
+- p: [11, 23]
+  k: $$mdi:bluetooth-off$$
+  l: [Raise]
+- p: [6, 18]
+  k: {t: '1', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
+  l: [Raise]
+- p: [7, 19]
+  k: {t: '2', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
+  l: [Raise]
+- p: [8, 20]
+  k: {t: '3', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
+  l: [Raise]
+- p: [9, 21]
+  k: {t: '4', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
+  l: [Raise]
+- p: [10, 22]
+  k: {t: '5', s: '$$mdi:bluetooth-connect$$', type: bluetooth}
+  l: [Raise]
 - p: [11, 23]
   k: $$mdi:volume-high$$
   l: [v0.4.0]

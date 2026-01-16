@@ -544,23 +544,23 @@ use[href="#material:arrow_circle_up"] {
 <text x="308" y="126" class="combo tap">)</text>
 </g>
 <g class="combo combopos-14">
-<rect rx="6" ry="6" x="774" y="39" width="20" height="20" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="777" y="42" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
-</g>
-<g class="combo combopos-15">
 <rect rx="6" ry="6" x="578" y="53" width="20" height="20" class="combo"/>
 <text x="588" y="63" class="combo tap">-</text>
 <text x="588" y="55" class="combo shifted">_</text>
 </g>
-<g class="combo combopos-16">
+<g class="combo combopos-15">
 <rect rx="6" ry="6" x="634" y="46" width="20" height="20" class="combo"/>
 <text x="644" y="56" class="combo tap">=</text>
 <text x="644" y="48" class="combo shifted">+</text>
 </g>
-<g class="combo combopos-17">
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="690" y="53" width="20" height="20" class="combo"/>
 <text x="700" y="63" class="combo tap">/</text>
 <text x="700" y="55" class="combo shifted">?</text>
+</g>
+<g class="combo combopos-17">
+<rect rx="6" ry="6" x="774" y="39" width="20" height="20" class="combo"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="777" y="42" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo combopos-18">
 <rect rx="6" ry="6" x="522" y="60" width="20" height="20" class="combo"/>
