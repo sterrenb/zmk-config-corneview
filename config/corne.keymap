@@ -12,7 +12,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        display-name = "v0.4.0"; // Generated
+                        display-name = "v0.5.0"; // Generated
                         bindings = <
                                 &kp ESC         &kp B           &kp L           &kp D           &kp W           &kp Z           &kp SQT         &kp F           &kp O           &kp U           &kp J           &kp BSPC
                                 &kp TAB         &hml LSHFT N    &hml LCTRL R    &hml LALT T     &hml LGUI S     &kp G           &kp Y           &hmr RGUI H     &hmr RALT A     &hmr RCTRL E    &hmr RSHFT I    &kp DQT
