@@ -3,15 +3,23 @@ name: Draw ZMK keymaps
 on:
   workflow_dispatch:
   push:
+    branches-ignore:
+      - main
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "config/keymap-drawer.config.yml"
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   draw:
     # Prevent workflow loops by skipping runs triggered by the action's own commits.
-    if: github.event.head_commit.author.name != 'github-actions[bot]'
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && github.ref != 'refs/heads/main' && (github.event.head_commit.author.name != 'github-actions[bot]' || startsWith(github.event.head_commit.message, 'chore(release):')))
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
@@ -21,4 +29,4 @@ jobs:
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: ""
-      commit_message: "chore: draw keymaps"
+      commit_message: "chore(draw): update keymaps"
