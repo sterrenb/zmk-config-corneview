@@ -244,6 +244,10 @@ svg.keymap {
   --color--red: rgb(255, 100, 80);
   --color--red-mild: rgb(200, 100, 100);
 
+  --color--grey: rgb(100, 100, 100);
+  --color--grey-mild: rgb(30, 30, 30);
+
+
   font-family: system-ui, sans-serif;
 }
 
@@ -268,6 +272,12 @@ g[class^="layer-"]:first-of-type .label {
 .keypos-11 rect.key {
   fill: var(--color--red);
   stroke: var(--color--red-mild);
+}
+
+.keypos-24 rect.key,
+.keypos-35 rect.key {
+  fill: var(--color--grey);
+  stroke: var(--color--grey-mild);
 }
 
 text.label {
